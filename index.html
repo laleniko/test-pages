@@ -1,18 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
-    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
 </head>
+
 <body>
-    <ion-app>
-        <ion-content>
-            <iframe src="https://www.salesforce.com/products/platform/overview/"></iframe>
-        </ion-content>
-    </ion-app>
+
+    <header class="header">
+
+        <div class="header-top">
+            <div class="pure-g wrap">
+                <div class="pure-u-7-24 pure-u-md-4-24 pure-u-lg-4-24">
+                    <a href="/"><img src="assets/images/coralprint-logo-long.svg" alt="Корал-Принт" class="logo"> </a>
+                </div>
+                <div class="pure-u-3-24 pure-u-md-3-24 pure-u-lg-5-24">
+                    <div class="header-contact">
+                        <a href="mailto:info@coral-print.ru"><i
+                                class="coral-ico-mail"></i><span>info@coral-print.ru</span></a>
+                    </div>
+                </div>
+                <div class="pure-u-3-24 pure-u-md-3-24 pure-u-lg-5-24">
+                    <div class="header-contact"><a href="tel:+7 495 663-73-81"><i class="coral-ico-phone2"></i><span>+7
+                                495 663-73-81</span></a></div>
+                </div>
+                <div class="phone-hidden pure-u-md-8-24 pure-u-lg-6-24 text-center">
+                    <div class="back-call header__back-call" id="callBackAjax">
+                        <span class="call-toggler"><i class="coral-ico-mobile"></i> <span>Заказать звонок</span></span>
+                        <form class="call-from" id="call-from" action="#" method="post">
+                            <input type="hidden" name="formid" value="callbackajax">
+                            <input type="tel" name="phone" class="phone-input" placeholder="+7(___) ___-__-__" value="">
+                        </form>
+                    </div>
+                </div>
+                <div class="pure-u-11-24 pure-u-md-6-24 pure-u-lg-4-24">
+                    <div class="menu-toggler"></div>
+                    <div class="minicart">
+                        <a href="shopcart.html">
+                            <span class="icon">
+                                <i class="coral-ico-cart"></i>
+                                <span class="count evoShop_quantity"></span>
+                            </span>
+                            <span class="cart-label">На сумму</span>
+                            <span class="price"><span class="evoShop_total"></span> <i
+                                    class="coral-ico-rubl"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav-wrap">
+            <div class="wrap">
+                <ul class="nav inline-nav main-nav">
+                    <li class="first level1 odd"><a href="/vizitki/">Продукция</a>
+                        <div>
+                            <ul>
+                                <li class="first level2 odd"><a href="/vizitki/">Визитки</a></li>
+                                <li class="level2 even"><a href="/pechat-nakleek/">Наклейки</a></li>
+                                <li class="level2 odd"><a href="/pechat-listovok/">Листовки</a></li>
+                                <li class="level2 even"><a href="/pechat-bukletov/">Буклеты</a></li>
+                                <li class="level2 odd"><a href="/pechat-flaerov/">Флаеры</a></li>
+                                <li class="level2 even"><a href="/pechat-katalogov/">Каталоги</a></li>
+                                <li class="level2 odd"><a href="/pechat-obyavleniy/">Объявления</a></li>
+                                <li class="level2 even"><a href="/pechat-otkritok/">Открытки</a></li>
+                                <li class="level2 odd"><a href="/pechat-plakatov/">Плакаты</a></li>
+                                <li class="level2 even"><a href="/pechat-blankov/">Бланки</a></li>
+                                <li class="level2 odd"><a href="/pechat-kalendarey/">Календари</a></li>
+                                <li class="level2 even"><a href="/pechat-prezentaciy/">Презентации</a></li>
+                                <li class="level2 odd"><a href="/pechat-bannerov/">Баннеры</a></li>
+                                <li class="level2 even"><a href="/pechat-chertezhej/">Чертежи</a></li>
+                                <li class="level2 odd"><a href="/pechat-konvertov/">Конверты</a></li>
+                                <li class="level2 even"><a href="/bloknoty/">Блокноты</a></li>
+                                <li class="level2 odd"><a href="/pechat-broshyur/">Брошюры</a></li>
+                                <li class="level2 even"><a href="/pechat-stikerov/">Стикеры</a></li>
+                                <li class="level2 odd"><a href="/priglasitelnye/">Приглашения</a></li>
+                                <li class="level2 even"><a href="/gramoty/">Грамоты</a></li>
+                                <li class="level2 odd"><a href="/sertifikaty/">Сертификаты</a></li>
+                                <li class="level2 even"><a href="/blagodarnosti/">Благодарности</a></li>
+                                <li class="level2 odd"><a href="/cenniki/">Ценники</a></li>
+                                <li class="level2 even"><a href="/birki/">Бирки</a></li>
+                                <li class="level2 odd"><a href="/menyu/">Меню</a></li>
+                                <li class="level2 even"><a href="/zhurnaly/">Журналы</a></li>
+                                <li class="level2 odd"><a href="/liflety/">Лифлеты</a></li>
+                                <li class="level2 even"><a href="/dokumentaciya/">Документация</a></li>
+                                <li class="level2 odd"><a href="/beydzhi/">Бейджи</a></li>
+                                <li class="level2 even"><a href="/bilety/">Билеты</a></li>
+                                <li class="level2 odd"><a href="/kupony/">Купоны</a></li>
+                                <li class="level2 even"><a href="/tetradi/">Тетради</a></li>
+                                <li class="last level2 odd"><a href="/pechat-na-holste/">Холсты</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="level1 even"><a href="/constructor/">Конструктор визиток</a>
+                        <div>
+                            <ul>
+                                <li class="first level2 odd"><a href="/constructor/maket-vizitki-horizontal/">Визитки
+                                        шаблоны горизонтальные</a></li>
+                                <li class="last level2 even"><a href="/constructor/maket-vizitki-vertikal/">Вертикальные
+                                        шаблоны визиток</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="level1 odd"><a href="/portfolio/">Фото работ</a></li>
+                    <li class="level1 even"><a href="/dostavka.html">Доставка и оплата</a></li>
+                    <li class="last level1 odd"><a href="/kontakty.html">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 </body>
+
 </html>
